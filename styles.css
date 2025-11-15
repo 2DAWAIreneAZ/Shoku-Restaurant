@@ -16,9 +16,10 @@
 	padding: 0;
 }
 
-/*:root {
-
-}*/
+:root {
+	--foreground-bg1: rgba(254, 252, 237, 1);
+	--foreground-bg2: rgba(217, 126, 99, .75);
+}
 
 html {
 	scroll-behavior: smooth;
@@ -31,6 +32,8 @@ body {
 	font-family: Saira;
 	font-size: 1.5rem;
 
+	background-color: rgb(0, 0, 0, .25);
+
 }
 
 .hero {
@@ -39,14 +42,22 @@ body {
 	background-repeat: no-repeat;
 	background-position: center 43%;
 	background-size: cover;
-
+	
 	nav {
 		background-color: rgb(0, 0, 0, .5);
+		display: flex;
+		position: relative;
+		padding: 40px;
 		
-		ul {
+		justify-content: space-between;
+		align-items: center;
+		
+		.menu-on {
 			display: flex;
+			flex: 2;
 			align-items: center;
 			justify-content: space-around;
+
 			
 			li {
 				list-style: none;
@@ -58,8 +69,35 @@ body {
 				}
 			}
 		}
-	}
 
+		.test {
+			display: flex;
+			flex: 1;
+
+			.logo-wrapper {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -40%);
+
+				.logo-container {
+					background-color: rgb(0, 0, 0, 1);
+					padding: 40px;
+					border-radius: 50%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+
+					.logo {
+						object-fit: cover;
+					}
+				}
+				
+			}
+		}
+		
+	}
+	
 	.hero-content {
 		padding-left: 4rem;
 		margin-top: 2rem;
@@ -89,7 +127,9 @@ body {
 	
 }
 
-
+.home {
+	height: 100vh;
+}
 
 
 
