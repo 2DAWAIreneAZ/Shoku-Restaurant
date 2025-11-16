@@ -18,6 +18,7 @@
 
 :root {
 	--primary-color: rgba(255, 44, 44, 1);
+	--secondary-color-black-50: #626262;
 }
 
 html {
@@ -32,73 +33,86 @@ body {
 	font-size: 1.5rem;
 }
 
-.hero {
-	height: 100vh;
-	background-image: url(assets/img/food-4911748_1920-Photoroom.png);
-	background-repeat: no-repeat;
-	background-position: 100% 70%;
-	background-size: 50%;
+.burguer {
+	width: 25px;
+	height: 25px;
+	margin-bottom: 8px;
+
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+
+	display: none;
+}
+
+nav {
+	position: relative;
+	padding: 4rem;
 	
-	nav {
-		position: relative;
-		padding: 4rem;
+	.menu-on {
+		background-color: var(--secondary-color-black-50);
+		border: 2px solid black;
+		display: flex;
+		flex: 1;
+		justify-content: space-around;
+		padding: 25px;
+		border-radius: 3rem;
 		
-		.menu-on {
-			background-color: white;
-			border: 2px solid black;
-			display: flex;
-			flex: 1;
-			justify-content: space-around;
-			padding: 25px;
-			border-radius: 3rem;
+		li {
+			list-style: none;
+			text-transform: uppercase;
 			
-			li {
-				list-style: none;
-				text-transform: uppercase;
-				
-				a {
-					text-decoration: none;
-					color: black;
-				}
+			a {
+				text-decoration: none;
+				color: white;
 			}
 		}
-
-		.test {
-
-			.logo-wrapper {
-				position: absolute;
-				left: 50%;
-				top: 50%;
-				transform: translate(-50%, -50%);
-
-				.logo-container {
-					background-color: var(--primary-color);
-					padding: 25px;
-					border-radius: 50%;
-					display: flex;
-					align-items: center;
-					justify-content: center;
-
-					.logo {
-						object-fit: cover;
-					}
-				}
-			}
-		}
-		
 	}
 
+	.test {
+
+		.logo-wrapper {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+
+			.logo-container {
+				background-color: var(--primary-color);
+				padding: 25px;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				.logo {
+					object-fit: cover;
+				}
+			}
+		}
+	}
+}
+
+.hero {
+	display: flex;
+	flex-direction: row-reverse;
+
+	.hero-img {
+		flex: 1;
+	}
+	
 	.hero-content > * {
 		padding-left: 5rem;
 	}
 
 	.hero-content {
 		margin-top: 4rem;
+		flex: 1;
 		
 		.title-bg {
 			color: white;
 			background-color: var(--primary-color);
-			width: 50%;
+			width: 105%;
 			padding: .75rem 0 .75rem 5rem;
 			border-radius: 0 5rem 5rem 0;
 			margin-bottom: 1.5rem;
@@ -125,7 +139,6 @@ body {
 }
 
 .home {
-	height: 100vh;
 }
 
 
