@@ -1,8 +1,8 @@
 
 
 @font-face {
-	font-family: Glamoure;
-	src: url(assets/fonts/Glamoure.ttf);
+	font-family: Aclonica;
+	src: url(assets/fonts/Aclonica.ttf);
 }
 
 @font-face {
@@ -31,6 +31,29 @@ body {
 
 	font-family: Saira;
 	font-size: 1.5rem;
+}
+
+h1 {
+	font-family: Aclonica;
+	font-size: clamp(2.75rem, 1.841rem + 2.424vw, 4.75rem);
+	color: white;
+}
+
+.title-bg {
+	background-color: var(--primary-color);
+	
+	margin-bottom: 1.5rem;
+}
+
+.title-bg-left {
+	width: 50%;
+	border-radius: 0 5rem 5rem 0;
+}
+
+.title-bg-right {
+	width: 105%;
+	padding: 1rem 0 1rem 15rem;
+	border-radius: 5rem 0 0 5rem;
 }
 
 .burguer {
@@ -96,6 +119,7 @@ nav {
 .hero {
 	display: flex;
 	flex-direction: row-reverse;
+	margin-bottom: 10rem;
 
 	.hero-img {
 		flex: 1;
@@ -108,19 +132,10 @@ nav {
 	.hero-content {
 		margin-top: 4rem;
 		flex: 1;
-		
-		.title-bg {
-			color: white;
-			background-color: var(--primary-color);
-			width: 105%;
-			padding: .75rem 0 .75rem 5rem;
-			border-radius: 0 5rem 5rem 0;
-			margin-bottom: 1.5rem;
-		}
 
-		h1 {
-			font-family: Glamoure;
-			font-size: clamp(2.75rem, 1.143rem + 4.286vw, 5rem);
+		.title-bg {
+			width: 105%;
+			padding: 2.5rem 0 2.5rem 5rem;
 		}
 
 		p {
@@ -139,6 +154,32 @@ nav {
 }
 
 .home {
+	
+	.home-content {
+		display: flex;
+
+		.home-img {
+			margin: auto;
+
+			p {
+				display: flex;
+				font-weight: 600;
+				justify-content: center;
+			}
+
+			img {
+				width: 759px;
+				height: auto;
+				padding: 3rem 3rem 0rem 3rem;
+			}
+		}
+
+		.origin p {
+			margin: 1.5rem;
+		}
+	}
+
+	
 }
 
 
