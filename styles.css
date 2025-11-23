@@ -18,6 +18,7 @@
 
 :root {
 	--primary-color: rgba(255, 44, 44, 1);
+	--red-darker: rgba(105, 0, 0, 1);
 	--secondary-color-black-50: #626262;
 }
 
@@ -39,9 +40,15 @@ h1 {
 	color: white;
 }
 
+h3 {
+	text-transform: uppercase;
+}
+
 .title-bg {
 	background-color: var(--primary-color);
 	margin-bottom: 1.5rem;
+	display: flex;
+	justify-content: center;
 }
 
 .title-section {
@@ -51,17 +58,18 @@ h1 {
 }
 
 .title-bg-left {
-	width: 50%;
-	margin: 10rem 0 3rem 0;
-	padding: 1rem 0 1rem 15rem;
+	width: 52%;
+	margin-bottom: 3rem;
+	padding: 1rem 0 1rem 2.5rem;
 	border-radius: 0 5rem 5rem 0;
 }
 
 .title-bg-right {
-	width: 50%;
+	width: 52%;
 	margin: 10rem 0 3rem 0;
-	padding: 1rem 0 1rem 15rem;
+	padding: 1rem 0 1rem 10rem;
 	border-radius: 5rem 0 0 5rem;
+	justify-content: center;
 }
 
 .burguer {
@@ -75,6 +83,8 @@ h1 {
 
 	display: none;
 }
+
+/* Común del Hero section de la primera página, el inicio del resto de las páginas y más similitudes */
 
 nav {
 	position: relative;
@@ -124,6 +134,30 @@ nav {
 	}
 }
 
+.origin-img, .itamae-img {
+	margin: auto;
+
+	p {
+		display: flex;
+		font-weight: 600;
+		justify-content: center;
+	}
+
+	img {
+		width: 759px;
+		height: auto;
+		padding: 3rem 3rem 0rem 3rem;
+	}
+}
+.origin-content, .itamae-content {
+	p {
+		margin: 1.5rem 0;
+		padding: 0 3rem 0 1rem;
+	}
+}
+
+/* ----------------------------------------------- HERO ---------------------------------------- */
+
 .hero {
 	display: flex;
 	flex-direction: row-reverse;
@@ -161,32 +195,15 @@ nav {
 	
 }
 
+/* ----------------------------------------------- HOME ---------------------------------------- */
+
 .home {
-	
 	.origin {
+		margin-bottom: 10rem;
+
 		.origin-content {
 			display: flex;
 			flex-direction: row;
-		}
-
-		.origin-img {
-			margin: auto;
-
-			p {
-				display: flex;
-				font-weight: 600;
-				justify-content: center;
-			}
-
-			img {
-				width: 759px;
-				height: auto;
-				padding: 3rem 3rem 0rem 3rem;
-			}
-		}
-		.origin-content p {
-			margin: 1.5rem 0;
-			padding: 0 3rem 0 1rem;
 		}
 	}
 
@@ -215,13 +232,241 @@ nav {
 	}
 
 	.philosophy {
+		margin-bottom: 10rem;
 		
+		.philosophy-content {
+			padding: 1rem 2rem;
+			display: flex;
+			
+			.philosophy-left, .philosophy-right {
+				margin: 2rem 0;
+				padding: 0 2.5rem;
+			}
+		}
 	}
 
-	
+	.quality {
+		.quality-content {
+			padding: 1rem 2rem;
+			display: flex;
+
+			.quality-left, .quality-right {
+				flex: 1;
+				margin: 2rem 0;
+				padding: 0 2.5rem;
+			}
+		}
+
+		.quality-img {
+			display: flex;
+			justify-content: center;
+			margin-bottom: 5rem;
+
+			img {
+				width: 1450px;
+				height: auto;
+			}
+		}
+	}
+}
+
+/* ----------------------------------------------- TEAM ---------------------------------------- */
+
+.team {
+	.team-img {
+		display: flex;
+		justify-content: center;
+
+		img {
+			width: 1389px;
+			margin-bottom: 2rem;
+		}
+	}
+
+	.team-content {
+		display: flex;
+		padding: 1rem 2rem;
+
+		p {
+			margin: 2rem 0;
+			padding: 0 2.5rem;
+		}
+	}
+
+	.head-itamae-content {
+		display: flex;
+		margin-bottom: 10rem;
+	}
+
+	.master {
+		.men {
+			display: flex;
+			justify-content: center;
+
+			.specilist {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				
+				img {
+					width: 90%;
+				}
+
+				.title {
+					margin-top: 3.6rem;
+				}
+			}
+		}
+
+		.women {
+			display: flex;
+			flex: 3;
+			justify-content: start;
+
+			.specilist {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				
+				img {
+					width: 90%;
+					padding-left: 2rem;
+				}
+
+				.title {
+					margin-top: 3.6rem;
+				}
+			}
+		}
+	}
+
+
+
+
+
+
+
+
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+	padding: 2rem;
+	background-color: var(--red-darker);
+	color: white;
+	display: flex;
+	justify-content: space-between;
+
+	.branding {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+		align-items: center;
+
+		.logo img {
+			width: 278px;
+			height: auto;
+		}
+	}
+
+	.links {
+		display: flex;
+		flex-direction: column;
+		line-height: 4rem;
+		align-items: center;
+		flex: 1;
+		margin: auto;
+		li {
+			list-style: none;
+			text-transform: uppercase;
+			
+			a {
+				text-decoration: none;
+				color: white;
+			}
+		}
+	}
+
+	.contact-us {
+		flex: 1;
+		justify-content: center;
+		margin-top: .9rem;
+
+		.phone, .direction, .email  {
+			display: flex;
+			margin-top: .5rem;
+
+			img {
+				padding-right: 1rem;
+			}
+		}
+
+		.follow {
+			margin-top: 1.25rem;
+
+			img {
+				padding: 0 .5rem;
+			}
+		}
+	}
+
+	.horary {
+		flex: 1;
+		margin-top: .9rem;
+
+		p {
+			margin: .5rem 0;
+		}
+	}
+}
 
 
 
