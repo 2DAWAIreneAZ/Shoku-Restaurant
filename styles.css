@@ -67,7 +67,7 @@ h3 {
 .title-bg-right {
 	width: 52%;
 	margin: 10rem 0 3rem 0;
-	padding: 1rem 0 1rem 10rem;
+	padding: 1rem 0 1rem 1rem;
 	border-radius: 5rem 0 0 5rem;
 	justify-content: center;
 }
@@ -299,50 +299,70 @@ nav {
 	}
 
 	.master {
-		.men {
+		.men, .women {
 			display: flex;
 			justify-content: center;
 
-			.specilist {
+			.specialist {
+				flex: 1;
 				display: flex;
 				flex-direction: column;
 				align-items: center;
 				
 				img {
-					width: 90%;
+					width: 70%;
 				}
 
-				.title {
-					margin-top: 3.6rem;
-				}
-			}
-		}
-
-		.women {
-			display: flex;
-			flex: 3;
-			justify-content: start;
-
-			.specilist {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				
-				img {
-					width: 90%;
-					padding-left: 2rem;
-				}
-
-				.title {
-					margin-top: 3.6rem;
+				p {
+					padding: 0 4rem;
+					margin: 2rem 0;
 				}
 			}
 		}
 	}
 
+	.tools-content {
+		display: flex;
 
+		.tools-left, .tools-right {
+			flex: 1;
+			padding: 0 4rem;
 
+			p {
+			margin: 2rem 0;
+			}
+		}
+	}
 
+	.tools-img {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 5rem;
+
+		img {
+			width: 95%;
+		}
+	}
+
+	.teamwork-content {
+		display: flex;
+		padding: 1rem 2rem;
+
+		p {
+			margin: 2rem 0;
+			padding: 0 2.5rem;
+		}
+	}
+
+	.teamwork-img {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 5rem;
+
+		img {
+			width: 90%;
+		}
+	}
 
 
 
