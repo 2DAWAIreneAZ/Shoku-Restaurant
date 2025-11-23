@@ -18,6 +18,7 @@
 
 :root {
 	--primary-color: rgba(255, 44, 44, 1);
+	--red-light: rgba(255, 229, 229, 1);
 	--red-darker: rgba(105, 0, 0, 1);
 	--secondary-color-black-50: #626262;
 }
@@ -363,14 +364,55 @@ nav {
 			width: 90%;
 		}
 	}
-
-
-
-
 }
 
+/* ----------------------------------------------- TEAMWORK ---------------------------------------- */
 
+.menu {
+	.menu-img {
+		display: flex;
+		justify-content: center;
 
+		img {
+			width: 67%;
+			margin-bottom: 2rem;
+		}
+	}
+
+	.menu-content {
+		display: flex;
+		padding: 1rem 2rem;
+
+		p {
+			margin: 2rem 0;
+			padding: 0 2.5rem;
+		}
+	}
+
+	.shoku-omakase {
+		background-color: var(--red-light);
+		margin: 3rem;
+
+		.title-menu {
+			display: flex;
+			justify-content: center;
+			font-size: 4rem;
+		}
+
+		.dish {
+			display: flex;
+			padding: 0 4rem;
+
+			.dish-top {
+				font-weight: 600;
+			}
+
+			.dish-content {
+
+			}
+		}
+	}
+}
 
 
 
