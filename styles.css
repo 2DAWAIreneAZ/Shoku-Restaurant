@@ -19,6 +19,7 @@
 :root {
 	--primary-color: rgba(255, 44, 44, 1);
 	--red-light: rgba(255, 229, 229, 1);
+	--red-separator: rgba(255, 151, 151, 1);
 	--red-darker: rgba(105, 0, 0, 1);
 	--secondary-color-black-50: #626262;
 }
@@ -396,19 +397,134 @@ nav {
 		.title-menu {
 			display: flex;
 			justify-content: center;
-			font-size: 4rem;
+			font-size: clamp(1rem, -0.429rem + 3.81vw, 3rem);
 		}
 
 		.dish {
 			display: flex;
-			padding: 0 4rem;
+			padding: 0 3rem;
+
+			.separator {
+				border: 2px solid var(--red-separator);
+				width: 2px;
+				height: 1200px;
+				margin-right: 2rem;
+			}
+
+			.dish-left, .dish-right {
+				flex: 1;
+
+				.alergens {
+					display: flex;
+					flex-direction: column;
+					margin-top: 4rem;
+					padding-left: 5rem;
+
+					img {
+						margin: 1rem;
+					}
+				}
+			}
 
 			.dish-top {
 				font-weight: 600;
+				display: flex;
+				flex: 1;
+				align-items: center;
+
+				img {
+					width:23px; 
+					height:23px;
+					margin: .5rem;
+				}
 			}
 
-			.dish-content {
+			.dish-left-content, .dish-right-content {
+				margin-right: 1rem;
 
+				h3 {
+					margin-top: 4rem;
+				}
+			}
+		}
+	}
+
+	.refined-creations {
+		.creations {
+			display: flex;
+
+			.plate {
+				display: flex;
+				flex-direction: column;
+				flex: 1;
+				align-items: center;
+				padding: 2rem;
+
+				img {
+					width: 90%;
+				}
+
+				h2 {
+					margin: 1rem 0;
+				}
+			}
+		}
+	}
+
+	.quality {
+		margin-top: 10rem;
+
+		.procedence-content {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			
+			img {
+				width: 90%;
+				margin-bottom: 5rem;
+			}
+		}
+
+		.procedence {
+			padding: 1rem 2.5rem;
+			display: flex;
+
+			p {
+				margin: 0 2rem;
+			}
+		}
+	}
+
+	.wine-selection {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		padding-bottom: 5rem;
+		
+		img {
+			width: 90%;
+			margin-bottom: 5rem;
+		}
+
+		.wines {
+			display: flex;
+
+			.wine-left {
+				flex: 1;
+
+				.wine-content {
+					display: flex;
+					flex-direction: column;
+					padding: 2rem 2.5rem;
+					align-items: center;
+
+					p {
+						margin: .5rem 2rem;
+					}
+				}
 			}
 		}
 	}
