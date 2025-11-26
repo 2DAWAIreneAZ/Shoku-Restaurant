@@ -716,49 +716,6 @@ nav {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer {
 	padding: 2rem;
 	background-color: var(--red-darker);
@@ -840,6 +797,235 @@ footer {
 
 
 
+@media screen and (max-widht: 600px) {
+.title-bg {
+	background-color: var(--primary-color);
+	margin-bottom: 1.5rem;
+	display: flex;
+	justify-content: center;
+}
+
+.title-section {
+	width: 100%;
+	display: flex;
+	justify-content: end;
+}
+
+.title-bg-left {
+	width: 90%;
+	margin-bottom: 3rem;
+	padding: 1rem 0 1rem 2.5rem;
+	border-radius: 0 5rem 5rem 0;
+}
+
+.title-bg-right {
+	width: 90%;
+	margin: 5rem 0 3rem 0;
+	padding: 1rem 0 1rem 1rem;
+	border-radius: 5rem 0 0 5rem;
+	justify-content: center;
+}
+
+.hero {
+	.hero-content {
+
+    	.title-bg {
+			width: 10%;
+			padding: 2.5rem 0 2.5rem 5rem;
+		}
+	}
+}
+
+nav .menu-on li {
+		display: none;
+	}
+
+	.test {
+
+		.logo-wrapper {
+			
+
+			.logo-container {
+				
+
+				.logo {
+					
+				}
+			}
+		}
+	}
+}
+
+.hero {
+	flex-direction: column;
+}
+
+.origin-img {
+	margin: auto;
+
+	p {
+		display: flex;
+		font-weight: 600;
+		justify-content: center;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+		padding: 1rem 2rem 0rem 2rem;
+	}
+}
+
+.home {
+	.origin {
+		.origin-content {
+			display: flex;
+			flex-direction: column-reverse;
+
+			p {
+				font-size: 1.2rem;
+				margin: 1.5rem 0;
+				padding: 0 2rem 0 3rem;
+			}
+		}
+	}
+
+	.history, .philosophy, .quality {
+
+		.history-img, .quality-img {
+			img {
+				width: 100%;
+			}
+		}
+		.history-content, .philosophy-content, .quality-content {
+			flex-direction: column;
+			padding: 0;
+
+			p {
+				font-size: 1.2rem;
+				margin: .5rem;
+				padding: 0 1rem;
+			}
+		}
+	}
+}
+
+.team {
+	.team-content {
+		flex-direction: column;
+		
+		p {
+			font-size: 1.2rem;
+			margin: .5rem;
+			padding: 0 1rem;
+		}
+	}
+
+	.head-itamae-content {
+		flex-direction: column-reverse;
+
+		.itamae-content {
+			display: flex;
+			flex-direction: column;
+
+			h2 {
+				font-size: 1.5rem;
+				padding-left: 1rem;
+			}
+
+			p {
+				font-size: 1.2rem;
+			}
+		}
+
+		.itamae-img {
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+	.master {
+		.men, .women {
+			display: flex;
+			flex-direction: column;
+
+			.specialist p {
+				font-size: 1.2rem;
+			}
+		}
+	}
+
+	.tools, .teamwork {
+		.tools-content, .teamwork-content {
+			display: flex;
+			flex-direction: column;
+
+			p {
+				font-size: 1.2rem;
+			}
+		}
+	}
+}
+
+.menu {
+
+}
+
+.contact {
+	.contact-content {
+		flex-direction: column;
+
+		p {
+			font-size: 1.2rem;
+		}
+	}
+
+	.contact-bg {
+		margin-left: 1.5rem;
+		width: 90%;
+	}
+
+	.reserve-content {
+		flex-direction: column;
+
+		p {
+			font-size: 1.2rem;
+		}
+
+		.contact-bg-res {
+		width: 70%;
+
+		.top {
+			width: 20px;
+		}
+	}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+	flex-direction: column;
+
+	.contact-us, .horary {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		
+	}
+}
 
 
 
