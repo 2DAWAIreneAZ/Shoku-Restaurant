@@ -869,17 +869,18 @@ footer {
 
 	.title-bg-left {
 		width: 90%;
-		margin-bottom: 3rem;
-		padding: 1rem 0 1rem 2.5rem;
-		border-radius: 0 5rem 5rem 0;
 	}
 
 	.title-bg-right {
 		width: 90%;
 		margin: 5rem 0 3rem 0;
-		padding: 1rem 0 1rem 1rem;
+		padding: 1rem 0 1rem 3rem;
 		border-radius: 5rem 0 0 5rem;
 		justify-content: center;
+	}
+
+	h2 {
+		font-size: 1.6rem;
 	}
 
 	.burguer {
@@ -887,11 +888,24 @@ footer {
 	}
 
 	.hero {
-		.hero-content {
+		margin-bottom: 2rem;
 
+		.hero-content>* {
+			padding-left: 2.5rem;
+
+			&:last-child {
+				margin-left: 2.5rem;
+			}
+		}
+
+		.hero-content {
 			.title-bg {
 				width: 90%;
-				padding: 2.5rem 0 2.5rem 5rem;
+				padding: 2.5rem 0 2.5rem 2.5rem;
+			}
+
+			p {
+				font-size: 1.2rem;
 			}
 		}
 	}
@@ -927,9 +941,6 @@ footer {
 
 		
 	}
-
-
-
 
 
 	.hero {
@@ -1161,7 +1172,7 @@ footer {
 			width: 120%;
 		}
 		.contact-content {
-			flex-direction: column;
+			flex-direction: column-reverse;
 
 			p {
 				font-size: 1.2rem;
@@ -1174,17 +1185,25 @@ footer {
 		}
 
 		.reserve-content {
-			flex-direction: column;
+			flex-direction: column-reverse;
 
 			p {
 				font-size: 1.2rem;
 			}
 
 			.contact-bg-res {
-				width: 70%;
+				width: 120%;
+				height: auto;
 
 				.top {
-					width: 20px;
+					flex-direction: column;
+					padding: 0;
+				}
+
+				.bottom {
+					flex-direction: column;
+					margin: 0;
+					align-items: center;
 				}
 			}
 		}
