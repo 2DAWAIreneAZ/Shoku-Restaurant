@@ -675,6 +675,8 @@ nav {
 
 			.bottom {
 				display: flex;
+				justify-content: space-between;
+				margin: auto;
 
 				.block-res {
 					display: flex;
@@ -729,6 +731,24 @@ nav {
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 footer {
@@ -815,6 +835,26 @@ footer {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 600px) {
 	.title-bg {
 		background-color: var(--primary-color);
@@ -854,7 +894,7 @@ footer {
 		}
 	}
 
-	nav .menu-on li {
+	nav .menu-on .item {
 		display: none;
 	}
 
