@@ -96,6 +96,10 @@ button {
 	cursor: pointer;
 }
 
+.navcollapse, .menu-mobile {
+    display: none;
+}
+
 /* Común del Hero section de la primera página, el inicio del resto de las páginas y más similitudes */
 
 nav {
@@ -140,6 +144,8 @@ nav {
 
 				.logo {
 					object-fit: cover;
+					width: 110px;
+					height: 110px;
 				}
 			}
 		}
@@ -894,22 +900,40 @@ footer {
 		}
 	}
 
-	nav .menu-on .item {
-		display: none;
-	}
+	nav {
+		padding: 2rem 1rem;
 
-	.test {
+		.test {
 
-		.logo-wrapper {
-
-
-			.logo-container {
+			.logo-wrapper {
 
 
-				.logo {}
+
+				.logo-container {
+					height: 80px;
+					width: 80px;
+					transform: translateX(-240%); 
+
+					.logo {
+						height: 60px;
+						height: 60px;
+					}
+				}
 			}
 		}
 	}
+
+	nav .menu-on {
+		.item {
+			display: none;
+		}
+
+		
+	}
+
+
+
+
 
 	.hero {
 		flex-direction: column;
