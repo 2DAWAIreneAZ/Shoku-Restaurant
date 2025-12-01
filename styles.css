@@ -1191,8 +1191,14 @@ footer {
 				font-size: 1.2rem;
 			}
 
+			.left {
+				flex: 0;
+			}
+			.right {
+				flex: 0;
+			}
+
 			.contact-bg-res {
-				width: 120%;
 				height: auto;
 
 				.top {
@@ -1203,6 +1209,7 @@ footer {
 				.bottom {
 					flex-direction: column;
 					margin: 0;
+					padding: 0;
 					align-items: center;
 				}
 			}
